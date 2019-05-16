@@ -15,7 +15,7 @@ class CreateJournalsTable extends Migration
     {
         Schema::create('journals', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('type'); //creadit/debit
+            $table->string('type',20); //creadit/debit
             $table->unsignedInteger('user_id');
             $table->string('buyer');
             $table->timestamps();

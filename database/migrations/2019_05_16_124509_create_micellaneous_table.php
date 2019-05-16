@@ -13,7 +13,7 @@ class CreateMicellaneousTable extends Migration
      */
     public function up()
     {
-        Schema::create('micellaneous', function (Blueprint $table) {
+        Schema::create('miscellaneous', function (Blueprint $table) {
             $table->increments('id');
             $table->double('amount');
             $table->text('purpose');
@@ -28,6 +28,6 @@ class CreateMicellaneousTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('micellaneous');
+        Schema::dropIfExists('miscellaneous');
     }
 }
